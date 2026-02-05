@@ -42,15 +42,15 @@
         function calcukate() 
         {
             console.log('계산을 시작합니다')
-            c=document.getElementById("n1").value;
-            d=document.getElementById("n2").value; //document.querySelector("#n2").value
+            c = document.getElementById("n1").value;
+            d = document.getElementById("n2").value; //document.querySelector("#n2").value
             a = parseInt(c);
             b = parseInt(d);
-            e = a+b
+            e = a+b;
                     
             result = `${a} + ${b} = ${e}`;
             alert(result);  
-            document.getElementById("n3").value =e;
+            document.getElementById("n3").value = e;
             //덧셈된 값 e를 화면의 텍스트 박스에 입력하기
         }
     </script>
