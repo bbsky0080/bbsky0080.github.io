@@ -20,6 +20,14 @@
             result = `${a} + ${b} = ${a+b}`;
             alert(result);
         }
+          function add1(n1,n2) //함수 parameter variables
+        {
+            /*
+              서식문자열(Formated String)
+            */
+            result = `${n1} + ${n2} = ${n1+n2}`;
+            alert(result);            
+        }
         function add(n1,n2) //함수 parameter variables
         {
             /*
@@ -48,6 +56,7 @@
             <h2>(Test_2)학습 리스트</h2>
             <ul>
                 <li><button type="button" onclick="test()">계산 테스트</button></li>
+                <li><button type="button" onclick="add1('4','5')">add 문자 계산 테스트</button></li>
                 <li><button type="button" onclick="add('4','5')">add 계산 테스트</button></li>              
             </ul>
         </section>
