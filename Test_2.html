@@ -42,9 +42,11 @@
         function calcukate() 
         {
             console.log('계산을 시작합니다')
-            a=document.getElementById("n1").value;
-            b=document.getElementById("n2").value; 
-             
+            c=document.getElementById("n1").value;
+            d=document.getElementById("n2").value;
+            a = parseInt(c);
+            b = parseInt(d);
+                    
             result = `${a} + ${b} = ${a+b}`;
             alert(result);            
         }
