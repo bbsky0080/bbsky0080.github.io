@@ -39,11 +39,11 @@
             alert(result);            
         }
         
-        function calcukate(n1,n2) 
+        function calcukate() 
         {
             console.log('계산을 시작합니다')
-            a = parseInt(n1);
-            b = parseInt(n2);
+            a = document.getElementByid("n1").value;
+            b = document.getElementByid("n2").value;            
             result = `${a} + ${b} = ${a+b}`;
             alert(result);            
         }
@@ -67,8 +67,8 @@
                 <li><button type="button" onclick="test()">계산 테스트</button></li>
                 <li><button type="button" onclick="add1('4','5')">add 문자 계산 테스트</button></li>
                 <li><button type="button" onclick="add('4','5')">add 계산 테스트</button></li> 
-                <li>숫자1<input type="text" name="n1"><br>
-                    숫자2<input type="text" name="n2"><br>
+                <li>숫자1<input type="text" id="n1" name="n1"><br>
+                    숫자2<input type="text" id="n2" name="n2"><br>
                     <button type="button" onclick="calcukate()">계산</button>
                 </li>                    
             </ul>
