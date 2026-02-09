@@ -66,17 +66,15 @@
     </style>
 
 	<script>
-		function check_form(){
-			ver email="hello@abc.com";
-			//email=document.getElementById('email').value;
-			if (email.includes('.')){
-					alert('정상 이메일 주소 입니다.');
-					
-				}
-			else{
-				alert('잘못된 이메일 주소 입니다.');
-			}
-		}
+		// 1. 이메일 검증 함수
+    function check_form() {
+        var email = "hello@abc.com";
+        if (email.includes('.')) {
+            alert('정상 이메일 주소 입니다.');
+        } else {
+            alert('잘못된 이메일 주소 입니다.');
+        }
+    }
 
 		// 클릭 시 키보드 조작 없이도 다중 선택이 가능하게 만드는 로직
   					document.getElementById('subject-select').onmousedown = function(e) {
