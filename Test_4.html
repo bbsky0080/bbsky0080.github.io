@@ -34,7 +34,10 @@
 			border: 1px solid black;}
 		#country_1{
 			display:inline-block; width:fit-content; padding:10px;
-			border: 1px solid black;}		
+			border: 1px solid black;}	
+		#course-select{
+			display:inline-block; width:fit-content; padding:10px;
+			border: 1px solid black;}
 
 		table {
 			width: 50%;
@@ -85,6 +88,17 @@
 				<label for="fruits_1">오렌지</label>
 				<input type="checkbox" id="fruits_1" name="fruits" value="orange">
 			</fieldset>
+			
+			<fieldset id="course-select">	
+			<legend> 좋아하는 과목은?</legend>
+			<select name="course-select">			
+				<option value="">--선택해주세요--</option>
+				<option value="Pytion">python</option>
+				<option value="Html">html</option>
+				<option value="Css">css</option>
+				<option value="Java">javascript</option>
+			</select>			
+		</fieldset>
 		</div>
 		<fieldset id="gender_Container">
 			<legend>성별은 무엇입니까?</legend>
