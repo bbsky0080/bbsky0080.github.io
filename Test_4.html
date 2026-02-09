@@ -77,6 +77,15 @@
 				alert('잘못된 이메일 주소 입니다.');
 			}
 		}
+
+		// 클릭 시 키보드 조작 없이도 다중 선택이 가능하게 만드는 로직
+  					document.getElementById('subject-select').onmousedown = function(e) {
+    				e.preventDefault(); // 기본 클릭 동작(하나만 선택)을 막음
+    
+   					const option = e.target;
+    				if (option.tagName === 'OPTION') {
+      				option.selected = !option.selected; // 클릭할 때마다 상태 반전}
+  					};
     </script>
 
 	
