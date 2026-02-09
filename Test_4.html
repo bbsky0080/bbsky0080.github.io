@@ -68,7 +68,8 @@
 	<script>
 		// 1. 이메일 검증 함수
     function check_form() {
-        var email = "hello@abc.com";
+       // var email = "hello@abc.com";
+		var email = document.getElementById(email).value;
         if (email.includes('.')) {
             alert('정상 이메일 주소 입니다.');
         } else {
