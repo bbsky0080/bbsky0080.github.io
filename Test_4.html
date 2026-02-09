@@ -37,6 +37,17 @@
 			width:fit-content;
 			padding:10px;
 			border: 1px solid black;}
+		#color_1{
+			display:inline-block;
+			width:fit-content;
+			padding:10px;
+			border: 1px solid black;}
+		#age_1{
+			display:inline-block;
+			width:fit-content;
+			padding:10px;
+			border: 1px solid black;}
+		
 
 		table {
 			width: 50%;
@@ -140,12 +151,21 @@
 		</form>
 	</fieldset>
 	
-	<fieldset>
-		<legend> 기타 사항</legend>
+	<fieldset id="color_1">
+		<legend> 좋아하는 색은?</legend>
 		<form>
-			<input type="color" id="favcolor" name="user_color" value="#4a90e2">
+			<input type="color" id="favcolor" name="user_color" value="#ffffff">
+			<button type="submit">전송</button>
 		</form>		
 	</fieldset>
+	<fieldset id="age_1">
+		<legend> 생년월일은?</legend>
+		<form>
+			<input type="date" id="start-date" name="trip_start">
+			<button type="submit">전송</button>
+		</form>		
+	</fieldset>
+	
 	
     <div><a href="https://bbsky0080.github.io"><strong> main </strong> </a></div>    
 </body>
