@@ -66,6 +66,13 @@
     </style>
 
 	<script>
+		function check_form(){
+			email = "hello@abc.com";
+			if !(email.includes('.'))
+				{
+					alert('잘못된 이메일 주소 입니다.!');
+				}
+		}
     </script>
 
 	
@@ -204,20 +211,14 @@
 			<lavel for="email" id="label_1">이메일:</lavel>
 			<input type="email" if="email" name="email">
 			
-			<script>
-				email = "hello@abc.com";
-				if !(email.includes('.'))
-				{
-					alert('잘못된 이메일 주소 입니다.!');
-				};
-			</script>
+		
 		</div>
 		
 			<label>
 				<input type="checkbox" name="agree"> 이용약관 동의
 			</label><br>
 		<div>
-			<button type="submit">전송하기</button>
+			<button type="button" onclick="check_form()">전송하기</button>
 		</div>
 	</form>
 	
