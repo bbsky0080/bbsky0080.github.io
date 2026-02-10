@@ -9,8 +9,19 @@
         header { background: #f4f4f4; padding: 10px; text-align: center; }
         main { margin-top: 20px; }
         footer { margin-top: 50px; font-size: 0.8em; color: gray; }
-		#Day_off{
-			color:red;}
+		.Day_off{
+			color:red;
+			font-weight:bold;
+		}
+		.calendar th{
+			background-color:#f2f2f2;
+			font-weight:bold;
+		}
+		.holiDay{
+			color:red;
+			font-weight:bold;
+			background-color:#ffecec;
+		}
     </style>
 </head>
 <header>
@@ -18,10 +29,10 @@
 </header>
 <body>
     <h1>달력</h1>
-     <table border="1">
+     <table calss="calendar">
 		<thead>
 	    	<tr>
-                <th id="Day_off">일요일</th>
+                <th class="Day_off">일요일</th>
                 <th>월요일</th>
                 <th>화요일</th>
                 <th>수요일</th>
@@ -32,7 +43,7 @@
 		</thead>
 		<tbody>
 	    	<tr>
-                <td id="Day_off">1</td>
+                <td class="Day_off">1</td>
                 <td>2</td>
                 <td>3</td>
                 <td>4</td>
@@ -41,7 +52,7 @@
                 <td>7</td>
             </tr>
 			<tr>
-                <td id="Day_off">8</td>
+                <td class="Day_off">8</td>
                 <td>9</td>
                 <td>10</td>
                 <td>11</td>
@@ -50,16 +61,16 @@
                 <td>14</td>
             </tr>
 			<tr>
-                <td id="Day_off">15</td>
-                <td id="Day_off">16</td>
-                <td id="Day_off">17</td>
-                <td id="Day_off">18</td>
+                <td class="Day_off">15</td>
+                <td class="holiDay">16</td>
+                <td class="holiDay">17</td>
+                <td class="holiDay">18</td>
                 <td >19</td>
                 <td>20</td>
                 <td>21</td>
             </tr>
 			<tr>
-                <td id="Day_off">22</td>
+                <td class="Day_off">22</td>
                 <td>23</td>
                 <td>24</td>
                 <td>25</td>
