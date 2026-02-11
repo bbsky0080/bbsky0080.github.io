@@ -15,12 +15,18 @@
         a[href*="github"]{
             background-color: Skyblue;
         }
-        a[href~="bbsky0080"]{
+        a[href*="bbsky0080"]{
             background-color: red;
         }
         
         a[href$="abc.com"]{
             background-color: pink;
+        }
+        div>a{
+            color: blue;
+        }
+        dib+a{
+            background-color: Purple;
         }
     </style>
 </head>
@@ -33,6 +39,19 @@
         <li><a href="http://github.com">github</a></li>
         <li><a href="http://abc.com">abc</a></li>
     </ul>
+    <div>
+        <div>
+            <a>home</a>
+        </div>
+        <p>
+            <nav>
+                <a>python</a>
+                <a>html</a>
+                <a>css</a>
+                <a>java</a>
+            </nav>
+        </p>
+    </div>
     
     <br><a href="https://bbsky0080.github.io">main</a>
 </body>
