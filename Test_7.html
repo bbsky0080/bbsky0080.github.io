@@ -9,15 +9,28 @@
         header { background: #f4f4f4; padding: 10px; text-align: center; }
         main { margin-top: 20px; }
         footer { margin-top: 50px; font-size: 0.8em; color: gray; }
+        a[href^=http]{
+            background-color: yellow;            
+        }
+        a[href$=github]{
+            background-color: #0009ff;
+        }
+        
+        a[href$=abc.com]{
+            background-color: #ff0900;
+        }
     </style>
 </head>
 <header>
     
 </header>
 <body>
-    <h1>안녕하세요!</h1>
-    <p>이것은 HTML 문서의 기본 예시입니다.</p>
+    <ul>
+        <li><a href="http://google.com">google</a></li>
+        <li><a href="http://github.com">github</a></li>
+        <li><a href="http://abc.com">abc</a></li>
+    </ul>
     
-    <a href="https://bbsky0080.github.io">main</a>
+    <br><a href="https://bbsky0080.github.io">main</a>
 </body>
 </html>
