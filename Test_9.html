@@ -16,6 +16,17 @@
             flex: 1;
             border: 1px solid red; color:blue;           
         }
+        .main_flex{
+            display:flex;
+            flex-direction:row;
+            justify-content:flex-start;
+            //align-items:center;
+            height: 100px;            
+        }
+        .m_f_l{
+            flex: 1;
+            border: 1px solid red; color:blue;           
+        }
     </style>
 </head>
 
@@ -27,14 +38,18 @@
     </header>
     
     <main class="main_flex">
-        <div class="m_f_l"></div>
-        <div class="m_f_l"></div>
-        <div class="m_f_l"></div>
+        <div class="main_flex">
+            <div class="m_f_l"></div>
+            <div class="m_f_l"></div>
+            <div class="m_f_l"></div>
+        </div>
     </main>
 
-    <footer class="footer_flex">
-        <div class="f_f_l">
-             <a href="https://bbsky0080.github.io"><strong> main </strong> </a>
+    <footer>
+        <div class="footer_flex">
+            <div class="f_f_l">
+                 <a href="https://bbsky0080.github.io"><strong> main </strong> </a>
+            </div>
         </div>
     </footer>   
 </body>
